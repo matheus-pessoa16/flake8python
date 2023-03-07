@@ -21,11 +21,11 @@ class TestFilaNormal:
 
         assert filateste.codigo == desired
 
-    def test_when_resetfila_and_codigo_gt_100_should_return_0(self):
+    def test_when_resetfila_and_codigo_gt_200_should_return_0(self):
         desired = 0
 
         filateste = FilaNormal()
-        filateste.codigo = 101
+        filateste.codigo = 201
         filateste.reset_fila()
 
         assert filateste.codigo == desired
